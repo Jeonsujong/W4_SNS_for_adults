@@ -7,11 +7,8 @@ class Post < ApplicationRecord
     before_save{
         words.each do |word|
             len = word.length
-            if(self.title.include?(word))
-                self.title.gsub!(/#{word}/, '*'*len)
-            elsif(self.content.include?(word))
-                   self.content.gsub!(/#{word}/, '*'*len)
-            end
+            self.title.gsub!(/#{word}/, '*'*len) if(self.title.include?(word))
+            self.content.gsub!(/#{word}/, '*'*len) if(self.content.include?(word))
         end
     }
 end
