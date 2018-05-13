@@ -1,5 +1,6 @@
 class User < ApplicationRecord
     has_many :posts
+    has_many :comments
     
     RegExp = /01[167890]-\d{3,4}-\d{4}/
     

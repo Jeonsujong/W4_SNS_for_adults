@@ -4,21 +4,21 @@
 ### 2. 모델 속성 표
 Table: users
 
-| id | Name     | Phone       | Age |
-|----|----------|-------------|-----|
-|  1 |oemi Bland|010-5313-0562|  23 |
+|   id   | Name     | Phone       | Age |
+|--------|----------|-------------|-----|
+|integer |  string  |string|  integer |
 
 Table: posts
 
-| id | Title    | Content          | User |
-|----|----------|------------------|------|
-|  1 |Good night|We go to the party| 36   |
+| id      | Title    | Content          | User   |
+|---------|----------|------------------|------  |
+| integer |string    | text             | string |
 
 Table: comments
 
-| id | Content           | Post  |
-|----|-------------------|-------|
-|  1 |제 계정에도 놀러오세요|    1   |
+| id      | Content           | Post   |
+|---------|-------------------|--------|
+| integer |       text        | string |
 
 
 
